@@ -1,0 +1,106 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  border: none;
+}
+body {
+  padding-bottom: 150px;
+  backdrop-filter: blur(3px);
+}
+.wrapperTwo {
+  padding-bottom: 150px;
+  backdrop-filter: blur(3px);
+  background: url("./img/background.jpg");
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+}
+
+.gif {
+  width: 300px;
+  height: 300px;
+}
+.title {
+  font-family: "Pacifico", cursive;
+  font-size: 46px;
+  color: #151515;
+  font-weight: 400;
+}
+.text {
+  max-width: 500px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: 20px;
+  color: #151515;
+}
+.buttons {
+  width: 100%;
+}
+.yes-btn {
+  padding: 16px 40px;
+  border: none;
+  color: #fff;
+  position: absolute;
+  top: 93%;
+  margin-right: 40px;
+  left: 40%;
+  background-color: #c61717;
+  border-radius: 3px;
+  transition: all 0.4s ease 0s;
+}
+.butn {
+  color: #fff;
+  padding: 16px 40px;
+  background-color: #c61717;
+  border-radius: 3px;
+  transition: all 0.4s ease 0s;
+}
+.butn:hover {
+  color: #ff0000;
+  background-color: #fff;
+  border: 1px solid #ff0000;
+}
+.no-btn {
+  padding: 16px 40px;
+  border: none;
+  left: 53%;
+  position: absolute;
+  top: 93%;
+  color: #fff;
+  background-color: #c61717;
+  border-radius: 3px;
+  transition: all 0.4s ease 0s;
+}
+.yes-btn:hover {
+  color: #ff0000;
+  background-color: #fff;
+  border: 1px solid #ff0000;
+}
+@media (max-width: 900px) {
+  .yes-btn {
+    left: 20%;
+  }
+  .no-btn {
+    left: 50%;
+  }
+  .title {
+    font-size: 26px;
+  }
+}
+@media (max-width: 400px) {
+  .yes-btn {
+    left: 10%;
+  }
+}
